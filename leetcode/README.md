@@ -1,38 +1,35 @@
-# Climbing Stairs (Easy)
+# Valid Perfect Square (Easy)
 
 ---
 
-<p>You are climbing a staircase. It takes <code>n</code> steps to reach the top.</p>
+<p>Given a positive integer num, return <code>true</code> <em>if</em> <code>num</code> <em>is a perfect square or</em> <code>false</code> <em>otherwise</em>.</p>
 
-<p>Each time you can either climb <code>1</code> or <code>2</code> steps. In how many distinct ways can you climb to the top?</p>
+<p>A <strong>perfect square</strong> is an integer that is the square of an integer. In other words, it is the product of some integer with itself.</p>
+
+<p>You must not use any built-in library function, such as <code>sqrt</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> n = 2
-<strong>Output:</strong> 2
-<strong>Explanation:</strong> There are two ways to climb to the top.
-1. 1 step + 1 step
-2. 2 steps
+<strong>Input:</strong> num = 16
+<strong>Output:</strong> true
+<strong>Explanation:</strong> We return true because 4 * 4 = 16 and 4 is an integer.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<strong>Input:</strong> n = 3
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> There are three ways to climb to the top.
-1. 1 step + 1 step + 1 step
-2. 1 step + 2 steps
-3. 2 steps + 1 step
+<strong>Input:</strong> num = 14
+<strong>Output:</strong> false
+<strong>Explanation:</strong> We return false because 3.742 * 3.742 = 14 and 3.742 is not an integer.
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= n &lt;= 45</code></li>
+	<li><code>1 &lt;= num &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
 
 
