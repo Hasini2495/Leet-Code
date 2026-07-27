@@ -1,31 +1,48 @@
-# Power of Four (Easy)
+# Fibonacci Number (Easy)
 
 ---
 
-<p>Given an integer <code>n</code>, return <em><code>true</code> if it is a power of four. Otherwise, return <code>false</code></em>.</p>
+<p>The <b>Fibonacci numbers</b>, commonly denoted <code>F(n)</code> form a sequence, called the <b>Fibonacci sequence</b>, such that each number is the sum of the two preceding ones, starting from <code>0</code> and <code>1</code>. That is,</p>
 
-<p>An integer <code>n</code> is a power of four, if there exists an integer <code>x</code> such that <code>n == 4<sup>x</sup></code>.</p>
+<pre>
+F(0) = 0, F(1) = 1
+F(n) = F(n - 1) + F(n - 2), for n &gt; 1.
+</pre>
+
+<p>Given <code>n</code>, calculate <code>F(n)</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<pre><strong>Input:</strong> n = 16
-<strong>Output:</strong> true
-</pre><p><strong class="example">Example 2:</strong></p>
-<pre><strong>Input:</strong> n = 5
-<strong>Output:</strong> false
-</pre><p><strong class="example">Example 3:</strong></p>
-<pre><strong>Input:</strong> n = 1
-<strong>Output:</strong> true
+
+<pre>
+<strong>Input:</strong> n = 2
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> F(2) = F(1) + F(0) = 1 + 0 = 1.
 </pre>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> n = 3
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> F(3) = F(2) + F(1) = 1 + 1 = 2.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> n = 4
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> F(4) = F(3) + F(2) = 2 + 1 = 3.
+</pre>
+
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>-2<sup>31</sup> &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
+	<li><code>0 &lt;= n &lt;= 30</code></li>
 </ul>
 
-<p>&nbsp;</p>
-<strong>Follow up:</strong> Could you solve it without loops/recursion?
 
  📝 Notes 
  ---
