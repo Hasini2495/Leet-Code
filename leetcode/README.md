@@ -1,43 +1,42 @@
-# Running Sum of 1d Array (Easy)
+# Maximum Product of Two Elements in an Array (Easy)
 
 ---
 
-<p>Given an array <code>nums</code>. We define a running sum of an array as&nbsp;<code>runningSum[i] = sum(nums[0]&hellip;nums[i])</code>.</p>
-
-<p>Return the running sum of <code>nums</code>.</p>
-
+Given the array of integers <code>nums</code>, you will choose two different indices <code>i</code> and <code>j</code> of that array. <em>Return the maximum value of</em> <code>(nums[i]-1)*(nums[j]-1)</code>.
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> nums = [1,2,3,4]
-<strong>Output:</strong> [1,3,6,10]
-<strong>Explanation:</strong> Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].</pre>
+<strong>Input:</strong> nums = [3,4,5,2]
+<strong>Output:</strong> 12 
+<strong>Explanation:</strong> If you choose the indices i=1 and j=2 (indexed from 0), you will get the maximum value, that is, (nums[1]-1)*(nums[2]-1) = (4-1)*(5-1) = 3*4 = 12. 
+</pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<strong>Input:</strong> nums = [1,1,1,1,1]
-<strong>Output:</strong> [1,2,3,4,5]
-<strong>Explanation:</strong> Running sum is obtained as follows: [1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1].</pre>
+<strong>Input:</strong> nums = [1,5,4,5]
+<strong>Output:</strong> 16
+<strong>Explanation:</strong> Choosing the indices i=1 and j=3 (indexed from 0), you will get the maximum value of (5-1)*(5-1) = 16.
+</pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> nums = [3,1,2,10,1]
-<strong>Output:</strong> [3,4,6,16,17]
+<strong>Input:</strong> nums = [3,7]
+<strong>Output:</strong> 12
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
-	<li><code>-10^6&nbsp;&lt;= nums[i] &lt;=&nbsp;10^6</code></li>
+	<li><code>2 &lt;= nums.length &lt;= 500</code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 10^3</code></li>
 </ul>
 
 
  📝 Notes 
  ---
 
- [ Time taken: 28m 29s ]
+ [ Time taken: 44m 4s ]
