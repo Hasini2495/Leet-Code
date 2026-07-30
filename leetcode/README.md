@@ -1,45 +1,52 @@
-# Single Number (Easy)
+# Merge Strings Alternately (Easy)
 
 ---
 
-<p>Given a <strong>non-empty</strong>&nbsp;array of integers <code>nums</code>, every element appears <em>twice</em> except for one. Find that single one.</p>
+<p>You are given two strings <code>word1</code> and <code>word2</code>. Merge the strings by adding letters in alternating order, starting with <code>word1</code>. If a string is longer than the other, append the additional letters onto the end of the merged string.</p>
 
-<p>You must&nbsp;implement a solution with a linear runtime complexity and use&nbsp;only constant&nbsp;extra space.</p>
+<p>Return <em>the merged string.</em></p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [2,2,1]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">1</span></p>
-</div>
+<pre>
+<strong>Input:</strong> word1 = &quot;abc&quot;, word2 = &quot;pqr&quot;
+<strong>Output:</strong> &quot;apbqcr&quot;
+<strong>Explanation:</strong>&nbsp;The merged string will be merged as so:
+word1:  a   b   c
+word2:    p   q   r
+merged: a p b q c r
+</pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [4,1,2,1,2]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">4</span></p>
-</div>
+<pre>
+<strong>Input:</strong> word1 = &quot;ab&quot;, word2 = &quot;pqrs&quot;
+<strong>Output:</strong> &quot;apbqrs&quot;
+<strong>Explanation:</strong>&nbsp;Notice that as word2 is longer, &quot;rs&quot; is appended to the end.
+word1:  a   b 
+word2:    p   q   r   s
+merged: a p b q   r   s
+</pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [1]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">1</span></p>
-</div>
+<pre>
+<strong>Input:</strong> word1 = &quot;abcd&quot;, word2 = &quot;pq&quot;
+<strong>Output:</strong> &quot;apbqcd&quot;
+<strong>Explanation:</strong>&nbsp;Notice that as word1 is longer, &quot;cd&quot; is appended to the end.
+word1:  a   b   c   d
+word2:    p   q 
+merged: a p b q c   d
+</pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
-	<li><code>-3 * 10<sup>4</sup> &lt;= nums[i] &lt;= 3 * 10<sup>4</sup></code></li>
-	<li>Each element in the array appears twice except for one element which appears only once.</li>
+	<li><code>1 &lt;= word1.length, word2.length &lt;= 100</code></li>
+	<li><code>word1</code> and <code>word2</code> consist of lowercase English letters.</li>
 </ul>
-
 
  📝 Notes 
  ---
