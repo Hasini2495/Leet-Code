@@ -1,48 +1,44 @@
-# Two Sum (Easy)
+# Sum of Unique Elements (Easy)
 
 ---
 
-<p>You are given an array of integers <code>nums</code>&nbsp;and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
+<p>You are given an integer array <code>nums</code>. The unique elements of an array are the elements that appear <strong>exactly once</strong> in the array.</p>
 
-<p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>
-
-<p>You can return the answer in any order.</p>
+<p>Return <em>the <strong>sum</strong> of all the unique elements of </em><code>nums</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> nums = [2,7,11,15], target = 9
-<strong>Output:</strong> [0,1]
-<strong>Explanation:</strong> Because nums[0] + nums[1] == 9, we return [0, 1].
+<strong>Input:</strong> nums = [1,2,3,2]
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> The unique elements are [1,3], and the sum is 4.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<strong>Input:</strong> nums = [3,2,4], target = 6
-<strong>Output:</strong> [1,2]
+<strong>Input:</strong> nums = [1,1,1,1,1]
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> There are no unique elements, and the sum is 0.
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> nums = [3,3], target = 6
-<strong>Output:</strong> [0,1]
+<strong>Input:</strong> nums = [1,2,3,4,5]
+<strong>Output:</strong> 15
+<strong>Explanation:</strong> The unique elements are [1,2,3,4,5], and the sum is 15.
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
-	<li><strong>Only one valid answer exists.</strong></li>
+	<li><code>1 &lt;= nums.length &lt;= 100</code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
 
-<p>&nbsp;</p>
-<strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than <code>O(n<sup>2</sup>)</code><font face="monospace">&nbsp;</font>time complexity?
 
  📝 Notes 
  ---
